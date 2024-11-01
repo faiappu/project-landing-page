@@ -87,8 +87,193 @@
     font-size: 16px;
 }
 
-header {
-    display: flex;
+/* typography */
+h1 {
+    margin: 0;
 }
 
+button {
+    background-color: #3882f6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+}
+
+#hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+#hero p,
+#hero button {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+/* general layout */
+
+body {
+    margin: 0;
+}
+
+body > *{
+    margin: 0;
+}
+
+header,
+.container,
+.cta {
+    margin: 0 auto;
+}
+
+.container,
+.cta {
+    max-width: 1000px;
+}
+
+/* sections */
+#navigation {
+    background-color: #1f2937;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #eee;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #eee; 
+}
+
+section {
+
+}
+
+/* hero */
+#hero {
+    background-color: #1f2937;
+    color: #fff;
+    text-align: left;
+    padding: 50px 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    flex: 1;
+}
+
+.text {
+    margin : 0 5% 0 0;
+}
+
+#hero button {
+}
+
+#hero img {
+    width: 100%;
+    max-width: 50%;
+}
+
+/* one */
+#one {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#one h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    flex: 1;
+}
+
+.card img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* two */
+#two {
+    background-color: #e5e7eb;
+    text-align: center;
+    padding: 70px 0;
+}
+
+blockquote {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 36px;
+}
+
+/* three */
+#three {
+    text-align: left;
+    padding: 50px 0;
+}
+
+.cta {
+    background-color: #3882f6;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.cta .container {
+    flex: 3;    
+    padding: 30px 30px;
+}
+
+.cta .container > * {
+    margin: 0;
+}
+
+.cta h4 {
+    margin-bottom: 10px !important;
+}
+
+.cta p {
+    font-weight: 100;
+}
+
+.cta button {
+    border-radius: 0;
+    border-left: 1px solid #e5e7eb;
+    color: #e5e7eb;
+    flex: 1;
+}
+
+/* footer */
+footer {
+    background-color: #1F2937;
+    color: #e5e7eb;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
 
